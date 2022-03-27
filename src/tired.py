@@ -72,11 +72,11 @@ def generate_articles():
 	right_data = json.dumps(right_dictionary, indent=5)
 
 	#upload to json file
-	with open("left.json", "w") as outfile:
+	with open("article1.json", "w") as outfile:
 	    outfile.write(left_data)
 	outfile.close()
 	
-	with open("right.json", "w") as outfile:
+	with open("article2.json", "w") as outfile:
 	    outfile.write(right_data)
 	outfile.close()
 

@@ -1,0 +1,41 @@
+import React, { Component } from 'react';
+import  from './dummy';
+
+export default class DummyForm extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      field: '',
+      checkBox: '',
+      options: '',
+      radioField: '',
+      error: '',
+      data: []
+    };
+  }
+  componentDidMount() {
+    this.setState({
+      data: frontPage
+    });
+  }
+
+  render_questions(element) {
+    // to-do: treat your data here on the type of questions you want to render
+    // If you want any, just return elm.UseDataQuestions
+    const questionType = element.map(elm =>
+      elm.UserDataQuestions.find(question => question === 'question')
+    );
+    return questionType.map(value => (
+      <select className="custom-select" id="inputGroupSelect01">
+        <option key={i}>{value.QuestionText}</option>
+      </select>
+    ));
+  }
+
+  render() {
+    console.log(frontPage);
+    return (
+      <React.Fragment>{this.state.data.map((x, i) => this.render_questions(x))}</React.Fragment>
+    );
+  }
+}
