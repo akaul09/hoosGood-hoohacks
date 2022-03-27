@@ -188,6 +188,7 @@ hr.rounded {
 a{
   width:100px;
   padding: 10px;
+  border-radius: 25px
 } 
 
 /* mouse over link */
