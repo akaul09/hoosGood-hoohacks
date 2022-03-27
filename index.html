@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Page Header -->
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="src/newsly.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+    <!-- Comments Box -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Box</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- DARK MODE BUTTON -->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode</title>
+     
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+    <style>
+        body{
+        padding:10% 3% 10% 3%;
+        text-align:center;
+        }
+        img{
+            height:70px;
+            width:70px;
+        }
+        h1{
+        color: #e6e6e6;
+        }
+        .mode {
+            float:right;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+            
+        }
+    </style>
+    <!-- Dark mode settings for Website -->
+    <div class="mode">
+        Dark mode:            
+        <span class="change">OFF</span>
+    </div>
+ 
+    <script>
+        $( ".change" ).on("click", function() {
+            if( $( "body" ).hasClass( "dark" )) {
+                $( "body" ).removeClass( "dark" );
+                $( ".change" ).text( "OFF" );
+            } else {
+                $( "body" ).addClass( "dark" );
+                $( ".change" ).text( "ON" );
+            }
+        });
+    </script>
+
+     <h1>NEWSLY</h1>
+  <!-- line divider -->
+      <hr class="rounded"> 
+     <!-- <h1 href="#default">NEWSLY</h1>-->
+         <div class="header-center">
+            <a href="#pop">Pop Culture</a>
+            <a href="#politics">Politics</a>
+            <a href="#health">Health</a>
+         </div>
+    <!-- the publisher -->
+    <!-- small header (e.g. date, volume) -->
+   <div class="wrapper">
+      <h2 class = "subSect"> CHARLOTTESVILLE, VA  </h2>
+      <h2> VOL. 1 </h2>
+      <h2 class = "subSect"><div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>          </h2>
+      <script type = "module" src="function.js"></script>
+  </div>
+    <!-- the description -->
+    <subtitle>
+      A reliable news company that will show you opposing perspectives to help formulate your own opinion. 
+    </subtitle> 
+  <!-- line divider -->
+  <hr class="rounded">
+  <!-- Article Section-->
+    <div class="articleParent">
+      <!-- Article 1 -->
+      <div class="articles">
+          <h3> Article 1 </h3>
+        <p> Information about Article</p>
+      </div>
+      <!-- Article 2 -->
+      <div class="articles">
+          <h3> Article 2 </h3> 
+        <p> Information about Article</p>
+      </div>
+    </div>
+  <!--Body of Page -->
+  <body>
+    <!-- Poll 
+    <div class="poll">
+  <q>Question: Which article do you agree with more?</q>
+  <p id="vote-count">0 votes</p>
+  <div class="poll-item">
+    <label>Article 1</label>
+    <votebut type ="button" class="p1">Vote</votebut>
+    <span class="p1">0%</span>
+  </div>
+  <div class="poll-item">
+    <label>Article 2 </label>
+    <votebut type ="button" class="p2">Vote</votebut>
+    <span class="p2">0%</span>
+  </div>
+</div>--> 
+    <!--Comment Section For Website --> 
+    <input type="text" id="comment-box" placeholder="Enter comment">
+    <button id="post">Post</button>
+    <ul id="unordered">
+</ul>     
+    <script src="code.js"></script>
+<!-- End of Comment Section -->
+    
+<!-- line divider -->
+  <hr class="rounded"> 
+<!-- Footer -->
+  <div>
+    <footer>
+      <h5>Creators: Rahul Andurkar | Ahyush Kaul | Michelle Tran | Ananya Ananda
+      </h5>
+      <img src="newsly.png" alt="Newsly Logo" style="width:100px;height:50px;">
+    </footer>
+  </div>
+  </body>
+</html>
