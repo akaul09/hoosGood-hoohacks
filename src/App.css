@@ -186,10 +186,9 @@ hr.rounded {
   border-radius: 5px;
 }
 a{
-  border-radius:15px;
   width:100px;
   padding: 10px;
-}
+} 
 
 /* mouse over link */
 a:hover {

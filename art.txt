@@ -39,3 +39,16 @@ export default class DummyForm extends Component {
     );
   }
 }
+
+render_questions(element) {
+    // to-do: treat your data here on the type of questions you want to render
+    // If you want any, just return elm.UseDataQuestions
+    const questionType = element.map(elm =>
+      elm.UserDataQuestions.find(question => question === 'question')
+    );
+    return questionType.map(value => (
+      <select className="custom-select" id="inputGroupSelect01">
+        <option key={i}>{value.QuestionText}</option>
+      </select>
+    ));
+  }
